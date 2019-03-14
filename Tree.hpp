@@ -7,7 +7,7 @@ namespace ariel {
 class Tree
 {
     private:
-    Node* root;
+    Node* _root;
     
     public:
     
@@ -15,7 +15,7 @@ class Tree
     void remove(int key);
     int size();
     bool contains(int key);
-    Node* root();
+    int root();
     Node* parent(int key);
     Node* left(int key);
     Node* right(int key);
