@@ -1,7 +1,7 @@
 
-#include <iostream>
+// #include <iostream>
 #include "Node.hpp"
-using namespace std;
+// using namespace std;
 
 namespace ariel {
 class Tree
@@ -11,14 +11,18 @@ class Tree
     
     public:
     
+    Tree();
+    ~Tree(){
+
+    };
     void insert(int key);
     void remove(int key);
     int size();
     bool contains(int key);
     int root();
-    Node* parent(int key);
-    Node* left(int key);
-    Node* right(int key);
+    int parent(int key);
+    int left(int key);
+    int right(int key);
     void print();
 
 };
