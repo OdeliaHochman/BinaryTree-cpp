@@ -22,7 +22,9 @@ class Node {
     Node* getRight() {  return right; }
     bool hasLeft() { return (left!=NULL); }
     bool hasRight(){ return (right!=NULL); }
-    void setLeft(int key) { this -> key = key; } 
-    void setRight(int key) { this -> key = key; }
+    void setKey(int key) { this -> key = key; } 
+    void setRight(Node* right) { this -> right = right; }
+    void setLeft(Node* left) { this -> left = left; }
+
 
 };
