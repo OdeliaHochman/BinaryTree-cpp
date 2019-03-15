@@ -10,12 +10,19 @@ class Node {
     Node* right;
 
   public:
-    // methods defined inline:
-    int getKey() { return key;  }
-
     // // Constructors:
-    Node (int key) ;
-void setLeft(int key);
-void setRight(int key);
+    Node (int key) {
+      this ->key= key;
+      left=NULL;
+      right=NULL;
+    }
+    
+    int getKey() { return key; }
+    Node* getLeft() { return left; }
+    Node* getRight() {  return right; }
+    bool hasLeft() { return (left!=NULL); }
+    bool hasRight(){ return (right!=NULL); }
+    void setLeft(int key) { this -> key = key; } 
+    void setRight(int key) { this -> key = key; }
 
 };
