@@ -1,14 +1,16 @@
 
 // #include <iostream>
 #include "Node.hpp"
-// using namespace std;
+#define COUNT 10 
 
 namespace ariel {
 class Tree
 {
     private:
     Node* _root;
-    
+    void print2DUtil(Node *root, int space);
+    Node* search(Node* root, int key);
+
     public:
     
     Tree();
@@ -26,4 +28,6 @@ class Tree
     void print();
 
 };
+
 }
+
