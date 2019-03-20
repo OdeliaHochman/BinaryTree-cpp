@@ -15,6 +15,23 @@ ariel::Tree::Tree()
     _root = nullptr;
 }
 
+ariel::Tree::~Tree()
+  {
+
+    destroyTree(_root);
+  }
+
+void ariel::Tree::destroyTree(Node* leaf)
+{
+  if(leaf!=NULL)
+  {
+    destroyTree(leaf->getLeft());
+    destroyTree(leaf->getRight());
+    delete leaf;
+  }
+}
+
+
 void ariel::Tree::insert(int key)
 {
 

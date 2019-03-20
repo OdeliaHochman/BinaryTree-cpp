@@ -19,12 +19,11 @@ private:
   Node *deleteNode(Node *root, int k);
   Node *minValueNode(Node *node);
   int size(Node *node);
+  void destroyTree(Node *node);
 
 public:
   Tree();
-  ~Tree(){
-
-  };
+  ~Tree();
   void insert(int key);
   void remove(int key);
   int size();
